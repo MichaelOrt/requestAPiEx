@@ -13,7 +13,10 @@
 	            <div>
                     <h5><%=data[key].title%></h5>
                     <p><%=data[key].authors.name%></p>
-                    <p><%=data[key].publish_date%></p>
+                     <p>Pages: <%=data[key].number_of_pages%></p>
+                    <p><%=key%></p>
+                    <p>Publisher: <%=data[key].publishers[0].name%></p>
+                    <p>Publish Date: <%=data[key].publish_date%></p>
                 </div>
 	        </li>	
         <% }); %>
